@@ -4,7 +4,7 @@ import './App.css';
 import H1component from './H1component';
 import { H2component } from './H1component'
 
-let macska= "feline"
+let macskesz= "feline"
 
 const test = "App-logo"
 
