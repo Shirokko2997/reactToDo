@@ -8,7 +8,12 @@ let macskesz= "feline"
 
 const test = "App-logo"
 
-function App() {
+
+
+
+function App(props) {
+  console.log(props)
+
   return (
     <React.Fragment>
 
@@ -18,15 +23,10 @@ function App() {
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
-          <H1component name={macskesz}>
-            <div>H1gyereke
-              <div>
-                kisdiv              
-              </div>  
-            </div>
-          </H1component>
-          <H2component>
-           szöveg 
+          <H1component name={props.name} labmeret={45} />
+          <H1component labakSzama={2} labmeret={45} />
+          <H2component name5={props.name2} h2FootSize={props.footSize}>
+           
             </H2component>
         </header>
       </div>
